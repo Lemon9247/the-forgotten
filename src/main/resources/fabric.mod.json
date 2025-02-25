@@ -1,37 +1,36 @@
 {
-	"schemaVersion": 1,
-	"id": "the-forgotten",
-	"version": "${version}",
-	"name": "The Forgotten",
-	"description": "This is an example description! Tell everyone what your mod is about!",
-	"authors": [
-		"Me!"
-	],
-	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
-	},
-	"license": "CC0-1.0",
-	"icon": "assets/the-forgotten/icon.png",
-	"environment": "*",
-	"entrypoints": {
-		"main": [
-			"com.lemoneater.theforgotten.TheForgotten"
-		],
-		"fabric-datagen": [
-			"com.lemoneater.theforgotten.TheForgottenDataGenerator"
-		]
-	},
-	"mixins": [
-		"the-forgotten.mixins.json"
-	],
-	"depends": {
-		"fabricloader": ">=0.16.10",
-		"minecraft": "~1.21.4",
-		"java": ">=21",
-		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
-	}
+    "schemaVersion": 1,
+    "id": "the-forgotten",
+    "version": "${version}",
+    "name": "The Forgotten",
+    "description": "Adds The Forgotten dimension to Minecraft",
+    "authors": [
+        "Lemon9247"
+    ],
+    "contact": {
+        "sources": "https://github.com/Lemon9247/the-forgotten"
+    },
+    "license": "LGPL3",
+    "icon": "assets/the-forgotten/icon.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "com.lemoneater.theforgotten.TheForgotten"
+        ],
+        "fabric-datagen": [
+            "com.lemoneater.theforgotten.TheForgottenDataGenerator"
+        ],
+        "client": [
+            "com.lemoneater.theforgotten.TheForgottenClient"
+        ]
+    },
+    "mixins": [
+        "the-forgotten.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": ">=0.16.10",
+        "minecraft": "~1.21.4",
+        "java": ">=21",
+        "fabric-api": "*"
+    },
 }
