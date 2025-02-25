@@ -18,19 +18,12 @@
 		"main": [
 			"com.lemoneater.theforgotten.TheForgotten"
 		],
-		"client": [
-			"com.lemoneater.theforgotten.TheForgottenClient"
-		],
 		"fabric-datagen": [
 			"com.lemoneater.theforgotten.TheForgottenDataGenerator"
 		]
 	},
 	"mixins": [
-		"the-forgotten.mixins.json",
-		{
-			"config": "the-forgotten.client.mixins.json",
-			"environment": "client"
-		}
+		"the-forgotten.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.16.10",
