@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "the-forgotten",
+	"version": "${version}",
+	"name": "The Forgotten",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/the-forgotten/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.lemoneater.theforgotten.TheForgotten"
+		],
+		"client": [
+			"com.lemoneater.theforgotten.TheForgottenClient"
+		],
+		"fabric-datagen": [
+			"com.lemoneater.theforgotten.TheForgottenDataGenerator"
+		]
+	},
+	"mixins": [
+		"the-forgotten.mixins.json",
+		{
+			"config": "the-forgotten.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
