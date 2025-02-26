@@ -2,6 +2,11 @@ package com.lemoneater.theforgotten;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.minecraft.block.Block;
+import net.minecraft.item.Item;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
